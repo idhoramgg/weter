@@ -30,13 +30,17 @@ class Time extends Component {
   render() {
     const ibBlue = {
       display: "inline-block",
-      color: "skyblue"
+      color: "black",
+      fontSize: "60px",
+      fontFamily: `Dancing Script, cursive`,
+      fontWeight: 200,
+      textShadow: `-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white`
     };
     return (
       <div>
-        <h2 style={ibBlue}>{this.state.hours} :</h2>
-        <h2 style={ibBlue}>{this.state.mins} :</h2>{" "}
-        <h2 style={ibBlue}>{this.state.secs}</h2>
+        <h2 style={ibBlue}> {this.state.hours} : </h2>{" "}
+        <h2 style={ibBlue}> {this.state.mins} : </h2>{" "}
+        <h2 style={ibBlue}> {this.state.secs}</h2>
       </div>
     );
   }

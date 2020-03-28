@@ -1,5 +1,38 @@
 .App {
   text-align: center;
+  height: 100vh;
+  margin: auto;
+  width: 100%;
+  /* -webkit-box-shadow: 0px 0px 38px 25px rgba(150, 222, 235, 10);
+  -moz-box-shadow: 0px 0px 38px 25px rgba(150, 222, 235, 10);
+  box-shadow: 0px 0px 38px 25px rgba(150, 222, 235, 10); */
+}
+/* night */
+.night {
+  background-image: url("./assets/img/night.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.5;
+  color: white;
+}
+
+.morning {
+  background-image: url("./assets/img/morning.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.5;
+  color: black;
+}
+
+.box {
+  height: 300px;
+  width: 100%;
 }
 
 .App-logo {
