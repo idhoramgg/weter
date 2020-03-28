@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import "../App.css";
+import Swal from "sweetalert2";
+
 export default class Name extends Component {
   constructor() {
     super();
@@ -9,10 +11,37 @@ export default class Name extends Component {
   }
 
   getName = () => {
-    let nameUser = prompt("Siapa Namamu?");
-    this.setState({
-      name: nameUser
-    });
+    Swal.mixin({
+      input: "text",
+      confirmButtonText: "Next &rarr;",
+      showCancelButton: true,
+      progressSteps: [""]
+    })
+      .queue([
+        {
+          title: "Halo, Siapa namamu?",
+          text: ""
+        }
+      ])
+      .then(result => {
+        console.log(result);
+
+        if (result.value) {
+          let answers = result.value[0];
+          console.log(answers);
+          this.setState({
+            name: answers
+          });
+          Swal.fire({
+            title: "Keren!",
+            html: `
+            Selamat datang
+            <pre><code>${answers}</code></pre>
+          `,
+            confirmButtonText: "Lovely!"
+          });
+        }
+      });
   };
 
   componentDidMount() {
