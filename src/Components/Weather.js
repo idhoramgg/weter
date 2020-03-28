@@ -51,7 +51,7 @@ export default class Weather extends React.Component {
       <ReactWeather
         forecast="today"
         unit="metric"
-        apikey={this.state.API}
+        apikey="3674b65e6c4f839884c64ddd0c1258bb"
         type="city"
         city="Jakarta"
       />
