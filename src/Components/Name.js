@@ -9,7 +9,7 @@ export default class Name extends Component {
   }
 
   getName = () => {
-    let nameUser = prompt("What is your name ?");
+    let nameUser = prompt("Siapa Namamu?");
     this.setState({
       name: nameUser
     });
@@ -20,7 +20,8 @@ export default class Name extends Component {
   }
   render() {
     let timex = new Date().getHours();
-    let pagi = timex > 0 && timex < 9 && timex >= 0 && timex < 9;
+    let pagi = timex > 0 && timex < 9;
+    let pagii = timex >= 0 && timex < 9;
     let siang = timex >= 9 && timex < 16;
     let sore = timex >= 16 && timex < 18;
     let malam = timex >= 18 && timex < 24;
@@ -35,6 +36,14 @@ export default class Name extends Component {
     };
 
     if (pagi) {
+      return (
+        <div>
+          <h1 style={ibBlue}>
+            Selamat Pagi {this.state.name}, Semoga Harimu Menyenangkan
+          </h1>
+        </div>
+      );
+    } else if (pagii) {
       return (
         <div>
           <h1 style={ibBlue}>
