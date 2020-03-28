@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import "../App.css";
 export default class Name extends Component {
   constructor() {
     super();
@@ -26,51 +26,34 @@ export default class Name extends Component {
     let sore = timex >= 16 && timex < 18;
     let malam = timex >= 18 && timex < 24;
 
-    const ibBlue = {
-      display: "inline-block",
-      color: "black",
-      fontSize: "100px",
-      fontFamily: `Dancing Script, cursive`,
-      fontWeight: 200,
-      textShadow: `-1px 0 white, 0 1px white, 1px 0 white, 0 -1px white`
-    };
-
     if (pagi) {
       return (
-        <div>
-          <h1 style={ibBlue}>
-            Selamat Pagi {this.state.name}, Semoga Harimu Menyenangkan
-          </h1>
+        <div className="iblue">
+          <p>Selamat Pagi {this.state.name}, Semoga Harimu Menyenangkan</p>
         </div>
       );
     } else if (pagii) {
       return (
-        <div>
-          <h1 style={ibBlue}>
-            Selamat Pagi {this.state.name}, Semoga Harimu Menyenangkan
-          </h1>
+        <div className="iblue">
+          <p>Selamat Pagi {this.state.name}, Semoga Harimu Menyenangkan</p>
         </div>
       );
     } else if (siang) {
       return (
-        <div>
-          <h1 style={ibBlue}>
-            Selamat Siang {this.state.name}, Semoga Tetap Semangat
-          </h1>
+        <div className="iblue">
+          <p>Selamat Siang {this.state.name}, Semoga Tetap Semangat</p>
         </div>
       );
     } else if (sore) {
       return (
-        <div>
-          <h1 style={ibBlue}>
-            Selamat Sore {this.state.name}, Jangan Lupa Istirahat
-          </h1>
+        <div className="iblue">
+          <p>Selamat Sore {this.state.name}, Jangan Lupa Istirahat</p>
         </div>
       );
     } else if (malam) {
       return (
-        <div>
-          <h1 style={ibBlue}>Selamat Malam {this.state.name}, Selamat tidur</h1>
+        <div className="iblue">
+          <p>Selamat Malam {this.state.name}, Selamat tidur</p>
         </div>
       );
     } else {

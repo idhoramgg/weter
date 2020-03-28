@@ -8,7 +8,6 @@ export default class Weather extends React.Component {
     this.state = {
       data: "",
       loading: true,
-      API: process.env.REACT_APP_PUB_KEY,
       lat: null,
       lon: null
     };
@@ -49,6 +48,7 @@ export default class Weather extends React.Component {
 
     return (
       <ReactWeather
+        style={{ background: "gray" }}
         forecast="today"
         unit="metric"
         apikey="3674b65e6c4f839884c64ddd0c1258bb"
