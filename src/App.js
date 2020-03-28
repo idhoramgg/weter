@@ -26,7 +26,7 @@ function App() {
         </div>
       </div>
     );
-  } else if (timezone.includes(malam)) {
+  } else {
     return (
       <div className="body night">
         <div className="App">
@@ -38,8 +38,6 @@ function App() {
         </div>
       </div>
     );
-  } else {
-    return <h1>error</h1>;
   }
 }
 
