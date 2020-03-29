@@ -9,14 +9,14 @@ import Name from "./Components/Name";
 //bg
 
 function App() {
-  console.log(window);
+  let timex = new Date().getHours();
+  let pagi = timex > 0 && timex < 9;
+  let pagii = timex >= 0 && timex < 9;
+  let siang = timex >= 9 && timex < 16;
+  let sore = timex >= 16 && timex < 18;
+  let malam = timex >= 18 && timex < 24;
 
-  let timezone = new Date().toLocaleTimeString();
-  let pagi = "AM";
-  let malam = "PM";
-  // console.log(timezone.includes(pagi));
-
-  if (timezone.includes(pagi)) {
+  if (pagi || pagii || siang || sore) {
     return (
       <div className="body morning">
         <div className="App">
