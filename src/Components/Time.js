@@ -31,8 +31,8 @@ class Time extends Component {
     return (
       <div className="boxhrs">
         <h2 className="hrs"> {this.state.hours} : </h2>{" "}
-        <h2 className="hrs"> {this.state.mins} : </h2>{" "}
-        <h2 className="hrs"> {this.state.secs}</h2>
+        <h2 className="hrs"> {this.state.mins} </h2>{" "}
+        {/* <h2 className="hrs"> {this.state.secs}</h2> */}
       </div>
     );
   }
