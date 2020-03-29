@@ -1,6 +1,6 @@
 import React from "react";
 import ReactWeather from "react-open-weather";
-import "react-open-weather/lib/css/ReactWeather.css";
+import "../App.css";
 import axios from "axios";
 export default class Weather extends React.Component {
   constructor() {
