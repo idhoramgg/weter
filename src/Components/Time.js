@@ -29,10 +29,10 @@ class Time extends Component {
   }
   render() {
     return (
-      <div>
-        <h2 className="iblue"> {this.state.hours} : </h2>{" "}
-        <h2 className="iblue"> {this.state.mins} : </h2>{" "}
-        <h2 className="iblue"> {this.state.secs}</h2>
+      <div className="boxhrs">
+        <h2 className="hrs"> {this.state.hours} : </h2>{" "}
+        <h2 className="hrs"> {this.state.mins} : </h2>{" "}
+        <h2 className="hrs"> {this.state.secs}</h2>
       </div>
     );
   }

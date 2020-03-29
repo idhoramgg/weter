@@ -1,15 +1,41 @@
+body {
+  box-sizing: border-box;
+}
 .App {
   text-align: center;
-  height: 100vh;
+  height: 100%;
   margin: auto;
   width: 100%;
   /* -webkit-box-shadow: 0px 0px 38px 25px rgba(150, 222, 235, 10);
   -moz-box-shadow: 0px 0px 38px 25px rgba(150, 222, 235, 10);
   box-shadow: 0px 0px 38px 25px rgba(150, 222, 235, 10); */
 }
+.hrs {
+  display: inline-block;
+  /* background: hsla(0, 2%, 46%, 0.568); */
+  padding: 20px;
+  color: white;
+  font-size: 60px;
+  font-family: "Dancing Script", cursive;
+  font-weight: 200px;
+  text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+.boxhrs {
+  background: hsla(0, 2%, 46%, 0.568);
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 900px) {
+  .boxhrs {
+    max-width: 100%;
+  }
+}
 
 .iblue {
   display: inline-block;
+  background: hsla(0, 2%, 46%, 0.568);
+  padding: 20px;
   color: white;
   font-size: 60px;
   font-family: "Dancing Script", cursive;
@@ -34,7 +60,7 @@
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   color: white;
 }
 
@@ -45,12 +71,12 @@
   background-repeat: no-repeat;
   height: 100vh;
   width: 100%;
-  opacity: 0.5;
+  /* opacity: 0.5; */
   color: black;
 }
 
 .box {
-  height: 300px;
+  height: 100vh;
   width: 100%;
 }
 
@@ -92,10 +118,21 @@
 /* Weather */
 .rw-main {
   color: #fff;
-  width: 100%;
+  max-width: 50%;
   height: 100%;
-  background: gray;
+  background: hsla(0, 2%, 46%, 0.568);
   display: flex;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 900px) {
+  .rw-main {
+    color: #fff;
+    max-width: 100%;
+    height: 100%;
+    background: hsla(0, 2%, 46%, 0.568);
+    display: flex;
+    margin: 0 auto;
+  }
 }
 .rw-main h2 {
   margin: 0 0 10px 0;

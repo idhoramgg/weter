@@ -20,9 +20,11 @@ function App() {
     return (
       <div className="body morning">
         <div className="App">
-          <Name />
-          <Time />
-          <Weather />
+          <div className="box">
+            <Name />
+            <Time />
+            <Weather />
+          </div>
         </div>
       </div>
     );
